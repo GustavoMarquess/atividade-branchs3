@@ -20,6 +20,10 @@ function calculate() {
   document.getElementById('result').value = currentValue;
 }
 
+
+
+
+
 function evalOperation(operation) {
   return new Function('return ' + operation)();
 }
