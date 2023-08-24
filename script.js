@@ -24,7 +24,6 @@ function evalOperation(operation) {
   return new Function('return ' + operation)();
 }
 
-
 function calculateSquareRoot() {
   if (currentValue === '') {
       return;
