@@ -26,3 +26,19 @@ function calculate() {
 function evalOperation(operation) {
   return new Function('return ' + operation)();
 }
+
+
+function calculateSquareRoot() {
+  if (currentValue === '') {
+      return;
+  }
+
+  const value = parseFloat(currentValue);
+  if (value < 0) {
+      document.getElementById('result').value = 'Erro';
+      return;
+  }
+
+  currentValue = Math.sqrt(value).toString();
+  document.getElementById('result').value = currentValue;
+}
